@@ -1,0 +1,663 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+header {
+  background: url(bg_header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.boitelogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+}
+.logoheader {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+nav {
+  width: 100%;
+  height: 10%;
+  background-color: #fec88a;
+  display: flex;
+  justify-content: center;
+}
+.navbar {
+  box-sizing: border-box;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 940px;
+}
+.navbar ul {
+  display: flex;
+  gap: 50px;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+}
+.navbar ul a {
+  color: #a1393b;
+}
+.searchlogo {
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a1393b;
+}
+.searchbar {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 35px;
+  color: #fec88a;
+}
+.search {
+  display: flex;
+  justify-content: center;
+}
+#search::placeholder {
+  color: #a1393b;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 450;
+  font-size: 20px;
+}
+#search:focus {
+  outline: none;
+}
+#search {
+  height: 35px;
+  background-color: #fec88a;
+  border: 2px solid #a1393b;
+  padding: 10px 10px;
+}
+.barlow-condensed-regular {
+  font-family: "Barlow Condensed", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.barlow-condensed-semibold {
+  font-family: "Barlow Condensed", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.barlow-condensed-bold {
+  font-family: "Barlow Condensed", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+main {
+  background-color: #3c3c3c;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 50px;
+}
+.photo1 {
+  background: url(soupe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 225px;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  grid-column: 1 / 3;
+}
+.photo2 {
+  background: url(salade.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 225px;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  grid-column: 3 / 5;
+}
+.photo3 {
+  background: url(dessert.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 225px;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  grid-column: 5 / 7;
+}
+.section1 p {
+  border-top: 1px solid #fec88a;
+  border-bottom: 1px solid #fec88a;
+  color: #fec88a;
+  width: 90%;
+  text-align: center;
+}
+.section1 {
+  display: grid;
+  grid-template-columns: repeat(3, 300);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+.section2 {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+.pagegauche {
+  grid-column: 1 / 3;
+  grid-row: 1 / 10;
+}
+
+.recents {
+  text-align: center;
+  border-top: 1px solid #a1393b;
+  border-bottom: 1px solid #a1393b;
+  color: #fec88a;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  font-size: 30px;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 3px;
+  padding: 15px;
+  margin-bottom: 50px;
+}
+.tacos {
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+  height: 600px;
+  width: 620px;
+  background-color: #c2c57e;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imgtacos {
+  height: 250px;
+  width: 620px;
+  background: url(tacos.jpg);
+}
+.imgtacos img {
+  position: absolute;
+  top: 215px;
+  right: 270px;
+}
+.txttacos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  color: #3c3c3c;
+  font-family: "Barlow Condensed", serif;
+  font-style: normal;
+  gap: 10px;
+}
+.tacosrct {
+  color: #a1393b;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.tacostitre {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.date {
+  letter-spacing: 1px;
+}
+.ptacos {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.cotecake {
+  display: flex;
+  gap: 20px;
+}
+.cote {
+  height: 540px;
+  width: 300px;
+  background-color: #c2c57e;
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.coteimage {
+  height: 180px;
+  width: 300px;
+  background: url(cote_de_boeuf.jpg);
+  display: flex;
+}
+.coteimage img {
+  position: absolute;
+  top: 140px;
+  right: 110px;
+}
+.cotetxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  color: #3c3c3c;
+  font-family: "Barlow Condensed", serif;
+  font-style: normal;
+  gap: 10px;
+}
+.coterct {
+  color: #a1393b;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.cotetitre {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.cotedate {
+  letter-spacing: 1px;
+}
+.pcote {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.lirepluscote {
+  font-size: 19px;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: #a1393b;
+  width: 100px;
+  padding: 10px;
+}
+.cake {
+  height: 540px;
+  width: 300px;
+  background-color: #c2c57e;
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cakeimage {
+  height: 180px;
+  width: 300px;
+  background: url(carrot.jpg);
+  display: flex;
+}
+.cakeimage img {
+  position: absolute;
+  top: 140px;
+  right: 110px;
+}
+.caketxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  color: #3c3c3c;
+  font-family: "Barlow Condensed", serif;
+  font-style: normal;
+  gap: 10px;
+}
+.cakerct {
+  color: #a1393b;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.caketitre {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.cakedate {
+  letter-spacing: 1px;
+}
+.pcake {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.cookie {
+  height: 600px;
+  width: 620px;
+  background-color: #c2c57e;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.imgcoo {
+  height: 250px;
+  width: 620px;
+  background: url(cookies.jpg);
+}
+.imgcoo img {
+  position: absolute;
+  top: 215px;
+  right: 270px;
+}
+.txtcoo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  color: #3c3c3c;
+  font-family: "Barlow Condensed", serif;
+  font-style: normal;
+  gap: 10px;
+}
+.coorct {
+  color: #a1393b;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.cootitre {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.coodate {
+  letter-spacing: 1px;
+}
+.pcoo {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.pagedroite {
+  grid-column: 3 / 4;
+}
+.me {
+  width: 300px;
+  height: 380px;
+  background: url(me.jpg);
+  background-repeat: no-repeats;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.textme {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tme {
+  text-align: center;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  color: #3c3c3c;
+}
+.pme {
+  text-align: center;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  color: #3c3c3c;
+}
+.logome {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+  gap: 5px;
+  color: #3c3c3c;
+}
+.catego {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  font-family: "Barlow Condensed", serif;
+  font-style: normal;
+  gap: 20px;
+}
+.tcatego {
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  letter-spacing: 3px;
+  padding: 15px;
+  border-top: 1px solid #a1393b;
+  border-bottom: 1px solid #a1393b;
+  color: #fec88a;
+}
+.lireplustacos {
+  font-size: 19px;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: #a1393b;
+  width: 100px;
+  padding: 10px;
+}
+.choix {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  gap: 10px;
+  letter-spacing: 2px;
+}
+.alcool,
+.jus,
+.bio {
+  display: flex;
+  justify-content: space-between;
+}
+.bieres {
+  width: 300px;
+  height: 380px;
+  background: url(bieres.jpg);
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bord {
+  width: 90%;
+  height: 90%;
+  border: #fec88a 1px solid;
+  align-content: center;
+  gap: 10px;
+  position: relative;
+}
+.txtbiere {
+  text-align: center;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  color: #fec88a;
+}
+.txtbiere p:last-child {
+  font-size: 40px;
+}
+.lireplus {
+  font-size: 19px;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: #a1393b;
+  width: 100px;
+  padding: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 75px;
+  cursor: pointer;
+}
+.cafe {
+  width: 300px;
+  height: 380px;
+  background: url(cafe.jpg);
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.txtcafe {
+  text-align: center;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  color: #fec88a;
+}
+.txtcafe p:last-child {
+  font-size: 40px;
+}
+.section3 {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+.galerietitre {
+  text-align: center;
+  border-top: 1px solid #a1393b;
+  border-bottom: 1px solid #a1393b;
+  color: #fec88a;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  font-size: 30px;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 3px;
+  padding: 15px;
+  margin-bottom: 50px;
+}
+.galeriephoto {
+  display: flex;
+  grid-column: 1 / 4;
+  height: 220px;
+  width: 920px;
+  gap: 20px;
+}
+.galerie2 {
+  display: flex;
+  gap: 20px;
+  grid-column: 1 / 4;
+  height: 220px;
+  width: 920px;
+}
+footer {
+  width: 100%;
+  height: 250px;
+}
+.foot {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.foot::before {
+  content: url(bg_footer.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(bg_footer.jpg) center/cover;
+  filter: brightness(0.3);
+  z-index: 0;
+}
+.boitefoot {
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+}
+.logofooter {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  line-height: 200px;
+  filter: brightness(120%);
+}
+.footertxt {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  justify-content: space-evenly;
+  font-family: "Barlow Condensed", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.footertxt ul {
+  display: flex;
+  gap: 35px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.footertxt a {
+  color: #bcbcbc;
+}
+.footertxt p {
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: white;
+}
